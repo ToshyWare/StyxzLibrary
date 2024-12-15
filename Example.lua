@@ -1,5 +1,5 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ToshyWare/StyxzLibrary/main/StyxzUI.lua"))()
-
+local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/ToshyWare/StyxzLibrary/main/Notify.lua"))()
 -- Create the main window
 local Window = redzlib:MakeWindow({"Styxz X | " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name, "", "styxz.json"})
 

@@ -1,3 +1,5 @@
+-- by ToshyVHS
+
 for _, v in ipairs(game:GetService("CoreGui"):GetChildren()) do
     if v.Name == "elgato status" or v.Name == "redz Library V5" or v.Name == "STYXZ X ON/OFF" or v.Name == "STYXZ TIME" then
         v:Destroy()

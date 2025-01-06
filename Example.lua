@@ -11,7 +11,7 @@ Window:AddMinimizeButton({
 
 local Tab1 = Window:MakeTab({"Um", "cherry"})
 local Tab2 = Window:MakeTab({"Dois", "swords"})
-local Tab3 = Window:MakeTab({"TrÃªs", "user"})
+local Tab3 = Window:MakeTab({"Tres", "user"})
 
 Tab1:AddButton({"Dark Theme", function()
   redzlib:SetTheme("Dark")
@@ -76,6 +76,7 @@ Toggle2:Callback(function(Value)
   Toggle1:Set(false)
 end)
 
+
 Tab2:AddSlider({
   Name = "Slider",
   Min = 1,
@@ -87,7 +88,15 @@ Tab2:AddSlider({
   end
 })
 
--- local Button = Tab2:AddButton({"Refresh Dropdown"})
+Tab2:AddTextBox({
+    Name = "Input",
+    Default = "Default",
+    PlaceholderText = "Lol",
+    ClearText = false,
+    Callback = function(Value)
+    
+    end
+})
 
 local Dropdown = Tab2:AddDropdown({
   Name = "Players List",
